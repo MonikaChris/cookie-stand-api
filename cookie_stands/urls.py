@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import ThingList, ThingDetail
+from .views import CookieStandList, CookieStandDetail
 
 urlpatterns = [
     path("", CookieStandList.as_view(), name="cookie_stand_list"),

@@ -1,16 +1,20 @@
 from django.urls import path
 from .views_front import (
-    ThingCreateView,
-    ThingDeleteView,
-    ThingDetailView,
-    ThingListView,
-    ThingUpdateView,
+    CookieStandCreateView,
+    CookieStandDeleteView,
+    CookieStandDetailView,
+    CookieStandListView,
+    CookieStandUpdateView,
 )
 
 urlpatterns = [
-    path("", ThingListView.as_view(), name="thing_list"),
-    path("<int:pk>/", ThingDetailView.as_view(), name="thing_detail"),
-    path("create/", ThingCreateView.as_view(), name="thing_create"),
-    path("<int:pk>/update/", ThingUpdateView.as_view(), name="thing_update"),
-    path("<int:pk>/delete/", ThingDeleteView.as_view(), name="thing_delete"),
+    path("", CookieStandListView.as_view(), name="cookie_stand_list"),
+    path("<int:pk>/", CookieStandDetailView.as_view(),
+         name="cookie_stand_detail"),
+    path("create/", CookieStandCreateView.as_view(),
+         name="cookie_stand_create"),
+    path("<int:pk>/update/", CookieStandUpdateView.as_view(),
+         name="cookie_stand_update"),
+    path("<int:pk>/delete/", CookieStandDeleteView.as_view(),
+         name="cookie_stand_delete"),
 ]

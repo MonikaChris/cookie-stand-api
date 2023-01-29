@@ -5,18 +5,18 @@ from .models import CookieStand
 
 
 class CookieStandListView(LoginRequiredMixin, ListView):
-    template_name = "cookie_stands_list.html"
+    template_name = "cookie_stand_list.html"
     model = CookieStand
-    context_object_name = "cookie_stands"
+    context_object_name = "cookie_stand"
 
 
 class CookieStandDetailView(LoginRequiredMixin, DetailView):
-    template_name = "cookie_stands_detail.html"
+    template_name = "cookie_stand_detail.html"
     model = CookieStand
 
 
 class CookieStandUpdateView(LoginRequiredMixin, UpdateView):
-    template_name = "cookie_stands_update.html"
+    template_name = "cookie_stand_update.html"
     model = CookieStand
     fields = "__all__"
 

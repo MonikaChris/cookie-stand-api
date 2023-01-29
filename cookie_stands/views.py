@@ -4,7 +4,7 @@ from rest_framework.generics import (
 )
 from .models import CookieStand
 from .permissions import IsOwnerOrReadOnly
-from .serializers import ThingSerializer
+from .serializers import CookieStandSerializer
 
 
 class CookieStandList(ListCreateAPIView):
