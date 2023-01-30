@@ -16,7 +16,7 @@ class CookieStandDetailView(LoginRequiredMixin, DetailView):
 
 
 class CookieStandUpdateView(LoginRequiredMixin, UpdateView):
-    template_name = "coockie_stand/cookie_stand_update.html"
+    template_name = "cookie_stand/cookie_stand_update.html"
     model = CookieStand
     fields = "__all__"
 
