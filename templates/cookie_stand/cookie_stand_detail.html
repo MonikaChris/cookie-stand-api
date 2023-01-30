@@ -3,14 +3,14 @@
 {% block content %}
 
   <div>
-    <h2>Location:  {{ cookie_stand.location }}</h2>
-    <p>Owner: {{ cookie_stand.owner }}</p>
-    <p>Description: {{ cookie_stand.description }}</p>
+    <h2>Location:  {{ object.location }}</h2>
+    <p>Owner: {{ object.owner }}</p>
+    <p>Description: {{ object.description }}</p>
   </div>
 
   <div>
-    <p><a href="{% url 'cookie_stand_update' cookie_stand.pk %}">Update</a></p>
-    <p><a href="{% url 'cookie_stand_delete' cookie_stand.pk %}">Delete</a></p>
+    <p><a href="{% url 'cookie_stand_update' object.pk %}">Update</a></p>
+    <p><a href="{% url 'cookie_stand_delete' object.pk %}">Delete</a></p>
   </div>
 
 
